@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4A90E2">
+</head>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+            <div class="nav-container">
+            <div class="nav-logo">8A Class Web</div>
+            <button class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#schedule" class="nav-link">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#students" class="nav-link">Siswa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Galeri</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to 8A Clas</h1>
+            <p>Temukan peluang belajar yang luar biasa dan mencari pengetahuan bersama kami.</p>
+            <a href="#courses" class="cta-button">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Pelajaran Kami</h2>
+            <input type="text" id="course-search" placeholder="Cari pelajaran..." class="search-input">
+            <div class="courses-grid">
+
+                <div class="course-card" data-modal="math">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Matematika</h3>
+                    <p>Kuasai dasar-dasar aljabar, geometri, dan kalkulus.</p>
+                </div>
+                <div class="course-card" data-modal="science">
+                    <i class="fas fa-flask"></i>
+                    <h3>IPA</h3>
+                    <p>Jelajahi prinsip-prinsip fisika, kimia, dan biologi.</p>
+                </div>
+                <div class="course-card" data-modal="english">
+                    <i class="fas fa-book"></i>
+                    <h3>B.Inggris</h3>
+                    <p>Meningkatkan kemampuan membaca, menulis, dan berkomunikasi.</p>
+                </div>
+                <div class="course-card" data-modal="history">
+                    <i class="fas fa-globe"></i>
+                    <h3>IPS</h3>
+                    <p>Pelajari tentang peristiwa dan peradaban dunia.</p>
+                </div>
+                <div class="course-card" data-modal="english">
+                    <i class="fas fa-book"></i>
+                    <h3>B.Indo</h3>
+                    <p>Mengetahui tentang puisi, poster, iklan, dll</p>
+                </div>
+                <div class="course-card" data-modal="PJOK">
+                    <i class="fas fa-book"></i>
+                    <h3>PJOK</h3>
+                    <p>meningkatkan kemampuan olahraga dan kebugaran tubuh</p>
+                </div>
+                <div class="course-card" data-modal="PPKN">
+                    <i class="fas fa-book"></i>
+                    <h3>PPKN</h3>
+                    <p>Dapat mempelajari hukum atau norma yang ada</p>
+                </div>
+                <div class="course-card" data-modal="INFORMATIKA">
+                    <i class="fas fa-computer"></i>
+                    <h3>INFORMATIKA</h3>
+                    <p>Meningkatkan berfikir komputasional dan jaringan</p>
+                </div>
+                <div class="course-card" data-modal="musik">
+                    <i class="fas fa-music"></i>
+                    <h3>Musik</h3>
+                    <p>Dapat Mengerti cara menggunakan alat musik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Jadwal Mingguan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7:40 - 9:00</td>
+                        <td>B.Jawa</td>
+                        <td>Pjok</td>
+                        <td>IPA</td>
+                        <td>Matematika</td>
+                        <td>B.Indo</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 - 10:20</td>
+                        <td>Senbud</td>
+                        <td>B.Indo</td>
+                        <td>B.Indo</td>
+                        <td>PPKN</td>
+                        <td>Matematika</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 - 11:50</td>
+                        <td>IPS</td>
+                        <td>Matematika</td>
+                        <td>Informatika</td>
+                        <td>Senbud</td>
+                        <td>Pjok</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Guru</h2>
+            <div class="about-content">
+                <img src="gotom.jpeg" alt="Guru">
+                <div class="about-text">
+                    <h3>Mrs. Laras</h3>
+                    <p>Dengan pengalaman mengajar lebih dari 15 tahun, Mrs. Laras berspesialisasi dalam pendidikan STEM dan metode pembelajaran inovatif. Beliau sangat bersemangat untuk menginspirasi generasi penerus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Section -->
+    <section id="students" class="students">
+        <div class="container">
+            <h2>Daftar Siswa Kelas 8A</h2>
+            <input type="text" id="student-search" placeholder="Cari siswa..." class="search-input">
+            <div class="students-grid">
+
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>01. -</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>02. -</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>03. Alvis syandana putra</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>04. Ajeng</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>05. -</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>06. Asadya akbar setiawan</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>07. Athailah gibran</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>08. -</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>09. -</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>10. -</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>11. -</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>12. -</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>13. Dhani fadil ibrahim</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>14. Deda priyo sembodo</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>15. Student Name 5</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>16. Faiq fawaz satria</h3>
+                    <p>Wakil ketua</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>17. Faiq fawaz satria</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>18. Student Name 3</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>19. Student Name 4</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>20. Student Name 5</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>21. Student Name 6</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>22. Faiq fawaz satria</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>23. M.rizki</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>24. M.Raafi e.m.m</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>25. Mykayla</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>26. Student Name 6</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>27. Faiq fawaz satria</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>28. Rafandra</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>29. Student Name 4</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>30. Student Name 5</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>31. Syahla diara</h3>
+                    <p>Siswa</p>
+                </div>
+                <div class="student-card">
+                    <div class="student-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>32. yorji</h3>
+                    <p>Siswa</p>
+                </div>
+                <!-- Add more students as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Foto & Video Kelas 8A</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card" data-modal="foto1">
+                    <img src="kelas1.jpeg" alt="Class photo 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Foto Kelas</h3>
+                    <p>Momen bersama di kelas 8A</p>
+                </div>
+                <div class="gallery-card" data-modal="foto1">
+                    <img src="jalan1.jpeg" alt="class photo 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Foto Acara</h3>
+                    <p>Momen jalan-jalan</p>
+                </div>
+                <div class="gallery-card" data-modal="photo2">
+                    <img src="jalan2.jpeg" alt="Class activity">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Aktivitas Kelompok</h3>
+                    <p>Proyek sains bersama</p>
+                </div>
+                <div class="gallery-card" data-modal="foto3">
+                    <img src="pantai1.jpeg" alt="class toor">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Outing Class</h3>
+                    <p>keluar kelas untuk bersenang-senang</p>
+                </div>
+                <div class="gallery-card" data-modal="photo3">
+                    <img src="sklh1.jpeg" alt="Pesantren kilat">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Pesantren kilat</h3>
+                    <p>-</p>
+                </div>
+                <div class="gallery-card" data-modal="video3">
+                    <img src="balim1.jpg" alt="Bali">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Studiy toor to Bali</h3>
+                    <p>Pulau dewata</p>
+                </div>
+                <div class="gallery-card" data-modal="photo4">
+                    <img src="bali2.jpeg" alt="Graduation">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>GWK</h3>
+                    <p>Foto bersama guru dan siswa</p>
+                </div>
+                <div class="gallery-card" data-modal="video4">
+                    <img src="bali3.jpeg" alt="Bali">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <h3>Musik Ensemble</h4>
+                    <p>Penampilan musik kelas 8A</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Playlist Section -->
+    <section id="playlist" class="playlist">
+        <div class="container">
+            <h2>Music Playlist Kelas 8A</h2>
+            <div class="player-container">
+                <div class="player">
+                    <div class="track-info">
+                        <img src="https://via.placeholder.com/300x300/4A90E2/white?text=Track+1" alt="Current track" class="track-art">
+                        <div>
+                            <h3 id="current-track">Lagu Favorit</h3>
+                            <p id="current-artist">Kelas 8A</p>
+                        </div>
+                    </div>
+                    <audio id="audio-player" preload="metadata"></audio>
+                    <div class="progress-container">
+                        <span id="current-time">0:00</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div class="controls">
+                        <button id="prev-btn"><i class="fas fa-step-backward"></i></button>
+                        <button id="play-pause-btn"><i class="fas fa-play"></i></button>
+                        <button id="next-btn"><i class="fas fa-step-forward"></i></button>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <h4>Daftar Lagu</h4>
+                    <ul id="track-list">
+                        <li data-track="0">
+                            <span>Lagu 1 - Artist 1</span>
+                            <span>3:45</span>
+                        </li>
+                        <li data-track="1">
+                            <span>Lagu 2 - Artist 2</span>
+                            <span>4:12</span>
+                        </li>
+                        <li data-track="2">
+                            <span>Lagu 3 - Artist 3</span>
+                            <span>3:28</span>
+                        </li>
+                        <li data-track="3">
+                            <span>Lagu 4 - Artist 4</span>
+                            <span>5:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; by:M.RAAFI E.M.M. 8A/24</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<body>
+
+    <div class="fab-container">
+        <div class="fab-options">
+            <a href="https://whatsapp.com/channel/0029Vb6TXZpGpLHSpclus83f" class="fab-button" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/eighttavengers/?utm_source=ig_web_button_share_sheet" class="fab-button" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@floryina_" class="fab-button" target="_blank" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="fab-main">
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+
+</body>
+</html>
+
